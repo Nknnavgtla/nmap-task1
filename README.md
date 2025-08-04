@@ -45,16 +45,18 @@ Out of 256 IPs scanned, 2 devices were online. Here's what I learned:
 Open Port: 53/tcp → This is commonly used for DNS (Domain Name System)
 
 🧑‍💻 2. My System: 10.159.10.0
-Open Ports:
-- 135/tcp – Microsoft RPC (Remote Procedure Call)
 
-- 139/tcp – NetBIOS Session Service (used for file sharing)
+Nmap scan report for 192.168.48.1
+Host is up (0.0012s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+902/tcp open  iss-realsecure
+912/tcp open  apex-mesh
 
-- 445/tcp – SMB (also used for file and printer sharing)
-
-- 5357/tcp – Web Services for Devices (used by Windows)
-
-- 16992/tcp – Intel AMT (remote management interface)
+# Nmap done at Mon Aug  4 17:44:50 2025 -- 256 IP addresses (2 hosts up) scanned in 82.50 seconds
 
 ⚠ Security Observations
 Ports 139 and 445 are known for vulnerabilities (e.g., WannaCry ransomware exploited SMB on port 445).
