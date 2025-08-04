@@ -35,7 +35,7 @@ This is a fundamental skill in cybersecurity called *network reconnaissance*.
 ## 💻 Command Used
 
 ```bash
-nmap -sS 192.168.120.0/24 -oN scan_results.txt
+nmap -sS 255.255.255.0/24 -oN scan_results.txt
 This scanned all 256 IPs in my local network and saved the results to a file.
 
 📄 What I Found
@@ -44,7 +44,7 @@ Out of 256 IPs scanned, 2 devices were online. Here's what I learned:
 🖥 1. Host: 192.168.120.240
 Open Port: 53/tcp → This is commonly used for DNS (Domain Name System)
 
-🧑‍💻 2. My System: 192.168.120.227
+🧑‍💻 2. My System: 10.159.10.0
 Open Ports:
 - 135/tcp – Microsoft RPC (Remote Procedure Call)
 
