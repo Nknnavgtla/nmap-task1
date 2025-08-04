@@ -26,8 +26,8 @@ This is a fundamental skill in cybersecurity called *network reconnaissance*.
 
 ## 📍 My Network Info
 
-- *My IP Address:* 192.168.120.227
-- *Subnet Scanned:* 192.168.120.0/24
+- *My IP Address:* 10.159.10.0
+- *Subnet Scanned:* 255.255.255.0/24
 - *Scan Type:* TCP SYN Scan (-sS)
 
 ---
@@ -46,16 +46,15 @@ Open Port: 53/tcp → This is commonly used for DNS (Domain Name System)
 
 🧑‍💻 2. My System: 192.168.120.227
 Open Ports:
+- 135/tcp – Microsoft RPC (Remote Procedure Call)
 
-135/tcp – Microsoft RPC (Remote Procedure Call)
+- 139/tcp – NetBIOS Session Service (used for file sharing)
 
-139/tcp – NetBIOS Session Service (used for file sharing)
+- 445/tcp – SMB (also used for file and printer sharing)
 
-445/tcp – SMB (also used for file and printer sharing)
+- 5357/tcp – Web Services for Devices (used by Windows)
 
-5357/tcp – Web Services for Devices (used by Windows)
-
-16992/tcp – Intel AMT (remote management interface)
+- 16992/tcp – Intel AMT (remote management interface)
 
 ⚠ Security Observations
 Ports 139 and 445 are known for vulnerabilities (e.g., WannaCry ransomware exploited SMB on port 445).
