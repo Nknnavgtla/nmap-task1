@@ -74,3 +74,14 @@ How to use Nmap to explore a network
 How to interpret open ports and running services
 
 Why it's important to identify and manage network exposure
+```
+What are the Problems A Faced During this Task 1
+-   1).get_srcaddr: can't connect socket: A socket operation was attempted to an unreachable network.
+- 🔍 What’s Causing It?
+- You're likely scanning a subnet that:
+- Doesn’t exist on your system,
+- Or is unreachable (e.g., Wi-Fi disconnected, VPN active),
+- Or you're scanning the wrong IP range (not matching your actual network).
+- 2).'nmapnmap' is not recognized as an internal or external command, operable program or batch file.
+- a)Nmap isn't installed properly, or
+- b)You typed the command incorrectly (likely repeated "nmap" by mistake).
